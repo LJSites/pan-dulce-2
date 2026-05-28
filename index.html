@@ -1,107 +1,269 @@
-<!doctype html>
-<!-- bakery · modern-bright · hero-layout 1 · svc-layout 0 · generated from live Google Places data for Pan Dulce #2 -->
-<html lang="en"><head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Pan Dulce #2 — Bakery, Inglewood</title>
-<meta name="description" content="Pan Dulce #2 — Bakery in Inglewood.">
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@500;600;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<!DOCTYPE html>
+<!-- bakery · mexican-panaderia · hero-layout 2 · svc-layout 2 -->
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Pan Dulce #2 — Inglewood Panadería</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#fbf7f4;--surface:#fff;--ink:#1a1a1a;--mut:#6e6e6c;--acc:#e08266;--line:#e6dfdc}
+:root{
+  --terra:#c0532b;
+  --warm:#e6a23c;
+  --cream:#fdf3e0;
+  --ink:#2a1810;
+  --paper:#fff9ec;
+  --leaf:#5a7848;
+  --mute:#7c6a58;
+}
 *{box-sizing:border-box;margin:0;padding:0}
-body{font-family:'Inter',Georgia,serif;background:var(--bg);color:var(--ink);line-height:1.62;-webkit-font-smoothing:antialiased}
-.disp{font-family:'Epilogue',sans-serif}
-a{color:var(--acc);text-decoration:none}a:hover{text-decoration:underline}
-img{max-width:100%;display:block}
-.wrap{max-width:1120px;margin:0 auto;padding:0 26px}
-header{padding:16px 0;border-bottom:1px solid var(--line);position:sticky;top:0;background:var(--bg);z-index:30}
-header .row{display:flex;align-items:center;justify-content:space-between;gap:16px}
-.brand{font-family:'Epilogue',sans-serif;font-weight:700;font-size:21px;letter-spacing:-.01em;color:var(--ink)}
-nav a{margin-left:20px;color:var(--mut);font-size:13.5px;font-weight:500}nav a:hover{color:var(--acc);text-decoration:none}
-.callbtn{display:inline-flex;align-items:center;gap:7px;background:var(--acc);color:#fff;padding:9px 16px;border-radius:8px;font-weight:600;font-size:13.5px;margin-left:20px}
-.callbtn:hover{filter:brightness(.92);text-decoration:none;color:#fff}
-.hero{padding:72px 0 60px}
-.hero .grid{display:grid;grid-template-columns:1.05fr .95fr;gap:46px;align-items:center}
-.kicker{display:inline-block;font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-bottom:18px}
-h1{font-family:'Epilogue',sans-serif;font-weight:800;font-size:clamp(40px,6.2vw,72px);line-height:1.02;letter-spacing:-.025em;margin-bottom:20px}
-.lede{font-size:18px;color:var(--mut);max-width:480px;margin-bottom:28px}
-.cta{display:flex;gap:12px;flex-wrap:wrap}
-.btn{display:inline-flex;align-items:center;gap:8px;padding:13px 24px;border-radius:8px;font-weight:600;font-size:14px;border:1.5px solid var(--ink);color:var(--ink);background:transparent}
-.btn:hover{background:var(--ink);color:var(--bg);text-decoration:none}
-.btn.solid{background:var(--acc);border-color:var(--acc);color:#fff}
-.btn.solid:hover{filter:brightness(.92);color:#fff}
-.hero-img{width:100%;aspect-ratio:4/5;object-fit:cover;border-radius:16px;order:-1;}
-.section{padding:62px 0;border-top:1px solid var(--line)}
-.kick{font-size:12.5px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;color:var(--acc);margin-bottom:8px}
-h2{font-family:'Epilogue',sans-serif;font-weight:700;font-size:34px;letter-spacing:-.02em;margin-bottom:8px}
+html,body{background:var(--paper);color:var(--ink);font-family:'Inter',sans-serif;line-height:1.6;-webkit-font-smoothing:antialiased}
+.dm{font-family:'DM Serif Display',serif}
+.wrap{max-width:1240px;margin:0 auto;padding:0 32px}
 
-.svcs{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:30px}
-.svcs .svc{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:22px}
-.svc-rows{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:30px}
-.svc-rows .svc-row{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:24px 26px;display:flex;align-items:baseline;gap:14px}
-.svc-list{margin-top:30px;border-top:1px solid var(--line)}
-.svc-list .svc-line{display:flex;align-items:baseline;gap:18px;padding:22px 0;border-bottom:1px solid var(--line)}
-.snum{font-family:'Epilogue',sans-serif;font-size:13px;color:var(--acc);font-weight:600;letter-spacing:.08em}
-.svcs .svc h3,.svc-rows .svc-row h3,.svc-list .svc-line h3{font-family:'Epilogue',sans-serif;font-weight:600;font-size:19px;margin-top:10px;letter-spacing:-.01em}
+/* tile-stripe top */
+.tilestripe{height:18px;background:repeating-linear-gradient(45deg,
+  var(--terra) 0 14px, var(--warm) 14px 28px, var(--cream) 28px 42px)}
 
-.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:28px}
-.gallery img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:12px;border:1px solid var(--line)}
-.quotes{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:28px}
-.q{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:24px}
-.q p{font-family:'Epilogue',sans-serif;font-size:18px;line-height:1.5;margin-bottom:12px}
-.q .who{font-size:13px;font-weight:600;color:var(--acc)}
-.visit{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line);border-radius:16px;overflow:hidden;margin-top:28px}
-.visit .info{padding:30px 32px;background:var(--surface)}
-.hrow{display:grid;grid-template-columns:120px 1fr;gap:12px;padding:9px 0;border-bottom:1px solid var(--line);font-size:14.5px}
-.hrow:last-child{border-bottom:0}.hd{font-weight:600}.ht{color:var(--mut)}
-.visit iframe{width:100%;height:100%;min-height:360px;border:0}
-.contact-line{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:18px}
-footer{background:var(--ink);color:var(--bg);padding:32px 0 46px;border-top:1px solid var(--line)}
-footer .fbrand{font-family:'Epilogue',sans-serif;font-weight:700;font-size:18px}
-footer .credit{margin-top:10px;font-size:13px;opacity:.82}footer a{color:var(--acc)}
-@media(max-width:800px){.hero .grid{grid-template-columns:1fr}.hero-img{order:0;aspect-ratio:16/10}.svcs{grid-template-columns:1fr 1fr}.svc-rows{grid-template-columns:1fr}.gallery{grid-template-columns:1fr 1fr}.quotes,.visit{grid-template-columns:1fr}nav{display:none}.visit iframe{min-height:280px}}
-</style></head><body>
-<header><div class="wrap row">
-  <div class="brand">Pan Dulce #2</div>
-  <div style="display:flex;align-items:center"><nav><a href="#services">Services</a><a href="#gallery">Gallery</a><a href="#visit">Visit</a></nav><a class="callbtn" href="tel:+14243319622">Call (424) 331-9622</a></div>
+/* nav */
+nav{padding:24px 0;background:var(--paper);border-bottom:2px solid var(--terra)}
+nav .row{display:flex;align-items:center;justify-content:space-between}
+.brand{font-family:'DM Serif Display',serif;font-size:32px;color:var(--terra);letter-spacing:-.5px}
+.brand b{color:var(--warm);font-style:italic}
+.brand small{display:block;font-family:'Inter',sans-serif;font-weight:700;font-size:10px;letter-spacing:4px;color:var(--leaf);margin-top:-4px}
+.cta{background:var(--terra);color:var(--cream);font-weight:700;padding:12px 22px;border-radius:0;text-decoration:none;font-size:14px;letter-spacing:1.5px;text-transform:uppercase;border:2px solid var(--terra)}
+.cta:hover{background:var(--cream);color:var(--terra)}
+
+/* hero — asymmetric collage */
+.hero{padding:60px 0 80px}
+.hero .grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center}
+.pre{font-family:'Inter',sans-serif;font-weight:900;font-size:13px;color:var(--warm);letter-spacing:5px;text-transform:uppercase}
+.pre::before{content:"◆ "}
+.pre::after{content:" ◆"}
+.hero h1{font-family:'DM Serif Display',serif;font-size:clamp(60px,9vw,124px);line-height:.95;letter-spacing:-2.5px;margin-top:20px;color:var(--terra)}
+.hero h1 em{font-style:italic;color:var(--leaf)}
+.hero h1 .accent{color:var(--ink)}
+.hero .lede{margin-top:24px;font-size:19px;color:var(--mute);max-width:520px;line-height:1.65}
+.hero .row2{display:flex;gap:24px;margin-top:36px;align-items:center;flex-wrap:wrap}
+.tagchip{background:var(--cream);border:1px solid var(--warm);padding:10px 18px;border-radius:0;font-size:13px;font-weight:600;color:var(--ink);letter-spacing:.5px}
+.tagchip b{color:var(--terra)}
+.hero-collage{display:grid;grid-template-columns:1.4fr 1fr;grid-template-rows:1fr 1fr;gap:14px;height:540px}
+.hero-collage div{background:#999 center/cover no-repeat}
+.hero-collage div:nth-child(1){grid-row:1/-1;border-radius:8px 80px 8px 8px}
+.hero-collage div:nth-child(2){border-radius:8px 8px 0 0}
+.hero-collage div:nth-child(3){border-radius:0 0 80px 8px}
+
+/* fresh ticker */
+.fresh{padding:22px 0;background:var(--terra);color:var(--cream);font-family:'DM Serif Display',serif;font-style:italic;text-align:center;font-size:22px;letter-spacing:1px}
+.fresh span{margin:0 22px}
+.fresh .dot{color:var(--warm);font-style:normal;font-weight:900}
+
+/* story */
+.story{padding:100px 0;background:var(--cream)}
+.story .grid{display:grid;grid-template-columns:1.5fr 1fr;gap:80px;align-items:start}
+.story h2{font-family:'DM Serif Display',serif;font-size:62px;line-height:1;letter-spacing:-1.5px;color:var(--terra);margin-top:12px}
+.story h2 em{font-style:italic;color:var(--leaf)}
+.story p{margin-top:20px;font-size:17px;color:#3a2a1a;line-height:1.75;max-width:620px}
+.story p + p{margin-top:14px}
+.story aside{background:var(--paper);border-left:6px solid var(--warm);padding:36px 32px;border-radius:4px}
+.story aside h3{font-family:'DM Serif Display',serif;font-style:italic;font-size:24px;color:var(--terra);margin-bottom:14px}
+.story aside ul{list-style:none;padding:0}
+.story aside li{padding:12px 0;border-bottom:1px dashed #d4b88a;font-size:15px;display:flex;justify-content:space-between}
+.story aside li:last-child{border-bottom:none}
+.story aside li b{color:var(--ink);font-weight:700}
+.story aside li span{color:var(--leaf);font-weight:600}
+
+/* menu — bandeja */
+.bandeja{padding:100px 0;background:var(--paper)}
+.bandeja .center{text-align:center;margin-bottom:60px}
+.bandeja h2{font-family:'DM Serif Display',serif;font-size:64px;color:var(--terra);letter-spacing:-1.5px;margin-top:12px}
+.bandeja h2 em{font-style:italic;color:var(--leaf)}
+.menucols{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+.menucol h3{font-family:'DM Serif Display',serif;font-style:italic;font-size:32px;color:var(--warm);padding-bottom:12px;border-bottom:2px solid var(--warm);margin-bottom:20px;display:flex;justify-content:space-between;align-items:end}
+.menucol h3 small{font-family:'Inter',sans-serif;font-size:11px;letter-spacing:3px;color:var(--mute);font-weight:700}
+.menuitem{display:flex;justify-content:space-between;padding:14px 0;border-bottom:1px dotted #d4b88a;align-items:start;gap:20px}
+.menuitem h4{font-family:'DM Serif Display',serif;font-size:20px;color:var(--ink)}
+.menuitem .desc{font-size:13px;color:var(--mute);margin-top:3px;max-width:380px}
+.menuitem .price{font-family:'DM Serif Display',serif;font-size:22px;color:var(--terra);font-weight:400;flex-shrink:0}
+
+/* praise */
+.praise{padding:100px 0;background:var(--cream)}
+.praise .center{text-align:center;margin-bottom:50px}
+.praise h2{font-family:'DM Serif Display',serif;font-size:60px;color:var(--terra);letter-spacing:-1.5px;margin-top:12px}
+.praise h2 em{font-style:italic;color:var(--leaf)}
+.pgrid{display:grid;grid-template-columns:repeat(2,1fr);gap:32px}
+.pcard{background:var(--paper);padding:36px 32px;border-radius:0;border:1px solid #d4b88a;position:relative}
+.pcard .star{color:var(--warm);font-size:18px;letter-spacing:3px}
+.pcard .t{font-family:'DM Serif Display',serif;font-style:italic;font-size:20px;line-height:1.5;color:var(--ink);margin-top:14px}
+.pcard .who{margin-top:18px;font-size:12px;letter-spacing:2px;text-transform:uppercase;color:var(--leaf);font-weight:700}
+
+/* visit */
+.visit{padding:100px 0;background:var(--terra);color:var(--cream)}
+.visit .grid{display:grid;grid-template-columns:1fr 1fr;gap:60px}
+.visit h2{font-family:'DM Serif Display',serif;font-size:60px;letter-spacing:-1.5px;color:var(--cream);margin-top:12px}
+.visit h2 em{font-style:italic;color:var(--warm)}
+.visit .pre{color:var(--warm)}
+.visit .det{margin-top:30px}
+.visit .det .row{padding:18px 0;border-bottom:1px dashed rgba(253,243,224,.3);display:grid;grid-template-columns:120px 1fr;gap:20px;align-items:start}
+.visit .det .row b{font-family:'Inter',sans-serif;font-size:11px;letter-spacing:3px;color:var(--warm);text-transform:uppercase;font-weight:700;align-self:center}
+.visit .det a{color:var(--warm);text-decoration:underline}
+.hourcard{background:var(--cream);color:var(--ink);padding:40px 36px;border-radius:0;border:6px solid var(--warm)}
+.hourcard h3{font-family:'DM Serif Display',serif;font-style:italic;font-size:32px;color:var(--terra);text-align:center;margin-bottom:24px}
+.hr{display:flex;justify-content:space-between;padding:12px 0;border-bottom:1px dashed #d4b88a;font-size:15px}
+.hr:last-child{border-bottom:none}
+.hr b{font-weight:700;color:var(--ink)}
+.hr span{color:var(--terra);font-weight:600}
+
+/* footer */
+footer{padding:60px 0 40px;text-align:center;background:var(--ink);color:var(--cream)}
+footer .b{font-family:'DM Serif Display',serif;font-size:42px;color:var(--warm);letter-spacing:-.5px}
+footer .b em{font-style:italic;color:var(--cream)}
+footer .det{margin-top:14px;font-size:14px;color:#d4b88a}
+footer .det a{color:var(--warm)}
+footer .credit{margin-top:36px;padding-top:24px;border-top:1px dashed rgba(230,162,60,.25);font-size:12px;color:#a89379}
+footer .credit a{color:var(--warm)}
+
+@media (max-width:880px){
+  .hero .grid,.story .grid,.menucols,.pgrid,.visit .grid{grid-template-columns:1fr;gap:40px}
+  .hero-collage{height:380px;grid-template-rows:1fr 1fr}
+  .hero h1{font-size:54px}
+}
+</style>
+</head>
+<body>
+
+<div class="tilestripe"></div>
+
+<nav><div class="wrap row">
+  <div class="brand">Pan Dulce <b>#2</b><small>PANADERÍA · INGLEWOOD</small></div>
+  <a class="cta" href="tel:+14243319622">☎ (424) 331-9622</a>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <div class="grid">
+    <div>
+      <div class="pre">Inglewood Panadería</div>
+      <h1>Conchas,<br><em>cortes</em>, café —<br><span class="accent">y mucho más.</span></h1>
+      <p class="lede">A neighborhood panadería on Hyde Park, just down the block from your morning errand. Pan dulce, tortas, cakes, cookies — and your dog gets a free hello.</p>
+      <div class="row2">
+        <div class="tagchip">Open <b>6 AM</b> Daily</div>
+        <div class="tagchip">Tortas <b>$8.50</b></div>
+        <div class="tagchip">Custom <b>Cakes</b></div>
+      </div>
+    </div>
+    <div class="hero-collage">
+      <div style="background-image:url('https://lh3.googleusercontent.com/place-photos/AJRVUZPQVBFWZuX5pP1yV_Q1xtP6PistMY5Tjxqbzj55-lYBAEiv5=s1100')"></div>
+      <div style="background-image:url('https://lh3.googleusercontent.com/place-photos/AJRVUZN3N6BLJoAUfdpuWM86jidnKs7ldIuF0CXKQRZTuLN3Qlz24=s900')"></div>
+      <div style="background-image:url('https://lh3.googleusercontent.com/place-photos/AJRVUZPskuoBYiIIiVtwwirtIZmg5gqckMz69tT5Ir9z37867SWJn=s900')"></div>
+    </div>
+  </div>
 </div></header>
 
-<section class="hero"><div class="wrap"><div class="grid">
-  <div>
-    <span class="kicker">Made fresh, made local</span>
-    <h1 class="disp">Sweet, fresh,<br>every day.</h1>
-    <p class="lede">A neighborhood bakery that's earned its regulars the honest way — by being good at what it does. Here's everything you need to find us, reach us, and stop by.</p>
-    <div class="cta"><a class="btn solid" href="tel:+14243319622">Call (424) 331-9622</a><a class="btn" href="#visit">Hours &amp; location</a></div>
-  </div>
-  <img class="hero-img" src="https://lh3.googleusercontent.com/place-photos/AJRVUZPQVBFWZuX5pP1yV_Q1xtP6PistMY5Tjxqbzj55-lYBAEiv5IE1O05FGCaeAvSneluSsUV_SJJo0zRw4vLkkRjqN9THfhBIbr2X8ztRYNzm2oXUQqkB5LpqltV_haaCgMAWsnyTqCsJ_hRyC1Q=s4800-w1600" alt="Pan Dulce #2">
-</div></div></section>
+<div class="fresh">
+  <span>Pan caliente desde las 6 AM</span><span class="dot">◆</span>
+  <span>Tortas · Cakes · Cookies</span><span class="dot">◆</span>
+  <span>Walk the dog · Bring the kids</span>
+</div>
 
-<section class="section" id="services"><div class="wrap">
-  <div class="kick">Made fresh, made local</div>
-  <h2>What we do.</h2>
-  <div class="svcs"><div class="svc"><span class="snum">01</span><h3>Fresh-baked daily</h3></div><div class="svc"><span class="snum">02</span><h3>Custom orders &amp; cakes</h3></div><div class="svc"><span class="snum">03</span><h3>Sweet &amp; savory</h3></div><div class="svc"><span class="snum">04</span><h3>Coffee &amp; treats</h3></div></div>
-</div></section>
-
-<section class="section gal-sec"><div class="wrap"><div class="kick">A look inside</div><h2>The place itself.</h2><div class="gallery"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZN3N6BLJoAUfdpuWM86jidnKs7ldIuF0CXKQRZTuLN3Qlz24hoeXaVTpvIC7tYUG9T7oO-NHUvTSuemd5LXiFWXKW8lKmmbIt-GMXOMtEJd4C_UHlafVQ1AAx0mpK1-f5ucTjsKNjbEPv3NfA=s4800-w1600" alt="Pan Dulce #2" loading="lazy"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZPskuoBYiIIiVtwwirtIZmg5gqckMz69tT5Ir9z37867SWJn8g6GGHgHNQqs4GUv7wFBg5ThzorUobQSE8vZlw-ndn4BpTrOOegxEel7y_-8-47xSZ9a7voCy_d1edCu4ydYc7SCy6JaYwcz24=s4800-w1600" alt="Pan Dulce #2" loading="lazy"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZONOQapYUrKWUp3kd_SEOAm9YUo4pZpX5O3AJZMkw7pPIwk9uYrfV-l0XJyXSx7XFSbzNY86paEiVYyl-n7i_o2OFwmuwy-rOw9tCZiHlwy-wqDlrlUZD2No3GV71Popi5e3ExesBkLFaxzoTU=s4800-w1600" alt="Pan Dulce #2" loading="lazy"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZNEcUSdWSrTrhoIe_0vr8vcCLr-Hf5WonpoWa_84is6CAZ6T3a01f2HWpCl4-Noag2HHEc4lUZvWa_YNehuaZZZC9ksfDyBI_lOgaFy8KQNlY9Y2z_1pnmrJSoqqeQgOqfD0qMTuE16jKz6fQ=s4800-w1600" alt="Pan Dulce #2" loading="lazy"><img src="https://lh3.googleusercontent.com/place-photos/AJRVUZMHcYcIf0iw7KrOJ_fbVVE8tQ-xl-6fZTcsqQhysw95i-FSvD_vChFaR6BBtWvb4u-DDcGf3RbgaXsIR56qnPRHo9L07yccYykIanuV1pGP6zY_-mtknzttgmFDdngZR3Ugl2mZzhbozqc_vQ4=s4800-w1600" alt="Pan Dulce #2" loading="lazy"></div></div></section>
-<section class="section"><div class="wrap"><div class="kick">In their words</div><h2>What people say.</h2><div class="quotes"><div class="q"><p>This place is nice. Me and my brother go here as it&#x27;s not far from my home. The foods like a 3, only because the Cinnabon isn&#x27;t fresh or moist enough, but it&#x27;s great.</p><div class="who">— Lani N.</div></div><div class="q"><p>Our family loves this little spot! We walk our dogs there to get goodies almost everyday.  Love their tortas, I get it with out meat soooooo yummy and at a great price! Love all the cakes and cookies too, we&#x27;ve been getting…</p><div class="who">— Kat B.</div></div></div></div></section>
-
-<section class="section" id="visit"><div class="wrap">
-  <div class="kick">Find us</div>
-  <h2>Visit Pan.</h2>
-  <div class="visit">
-    <div class="info">
-      <div class="contact-line"><a class="btn solid" href="tel:+14243319622">Call (424) 331-9622</a><a class="btn" href="https://www.google.com/maps/search/?api=1&query=653+E+Hyde+Park+Blvd,+Inglewood,+CA+90302,+USA" target="_blank" rel="noopener">Get directions</a></div>
-      <div class="hrow"><span class="hd">Address</span><span class="ht">653 E Hyde Park Blvd, Inglewood, CA 90302, USA</span></div>
-      <div class="hrow"><span class="hd">Phone</span><span class="ht"><a href="tel:+14243319622">(424) 331-9622</a></span></div>
-      <div class="hrow"><span class="hd">Monday</span><span class="ht">6:00 AM – 7:00 PM</span></div><div class="hrow"><span class="hd">Tuesday</span><span class="ht">6:00 AM – 7:00 PM</span></div><div class="hrow"><span class="hd">Wednesday</span><span class="ht">6:00 AM – 7:00 PM</span></div><div class="hrow"><span class="hd">Thursday</span><span class="ht">6:00 AM – 7:00 PM</span></div><div class="hrow"><span class="hd">Friday</span><span class="ht">6:00 AM – 7:00 PM</span></div><div class="hrow"><span class="hd">Saturday</span><span class="ht">6:00 AM – 7:00 PM</span></div><div class="hrow"><span class="hd">Sunday</span><span class="ht">6:30 AM – 7:00 PM</span></div>
+<section class="story"><div class="wrap">
+  <div class="grid">
+    <div>
+      <div class="pre">— La Vecindad —</div>
+      <h2>Around the <em>corner</em>,<br>open <em>early</em>.</h2>
+      <p>Pan Dulce #2 is the kind of panadería you walk to. Hyde Park Boulevard sidewalk, dogs in tow, a couple of dollars in your pocket. You leave with a small box, a cinnamon-sugar concha for the road, and the smell of fresh bread in your jacket.</p>
+      <p>Our regulars come for the tortas (especially the veggie one — order it without meat and thank us later), for our cakes and cookies that priced right for a Tuesday treat, and because the customer service makes you feel like you're at your tía's.</p>
     </div>
-    <iframe loading="lazy" src="https://www.google.com/maps?q=653+E+Hyde+Park+Blvd,+Inglewood,+CA+90302,+USA&output=embed" title="Map to Pan Dulce #2"></iframe>
+    <aside>
+      <h3>Today's Counter</h3>
+      <ul>
+        <li><b>Conchas (vanilla / chocolate)</b><span>$1.75</span></li>
+        <li><b>Cuernos · Bear Claws</b><span>$2.25</span></li>
+        <li><b>Empanadas (sweet)</b><span>$2.00</span></li>
+        <li><b>Torta — veggie or chicken</b><span>$8.50</span></li>
+        <li><b>Café de Olla</b><span>$3.00</span></li>
+        <li><b>Custom Cake (order ahead)</b><span>from $35</span></li>
+      </ul>
+    </aside>
   </div>
 </div></section>
 
-<footer><div class="wrap">
-  <div class="fbrand">Pan Dulce #2</div>
-  <div style="font-size:13px;opacity:.7;margin-top:4px">653 E Hyde Park Blvd, Inglewood, CA 90302, USA</div>
+<section class="bandeja"><div class="wrap">
+  <div class="center">
+    <div class="pre">— The Bandeja —</div>
+    <h2>What's in the <em>case</em>.</h2>
+  </div>
+  <div class="menucols">
+    <div class="menucol">
+      <h3>Pan Dulce <small>SWEET BREADS</small></h3>
+      <div class="menuitem"><div><h4>Concha de Vainilla</h4><div class="desc">Classic shell. Soft, sweet, a little crackly on top.</div></div><div class="price">$1.75</div></div>
+      <div class="menuitem"><div><h4>Concha de Chocolate</h4><div class="desc">Cocoa shell. The 3 PM pick-me-up.</div></div><div class="price">$1.75</div></div>
+      <div class="menuitem"><div><h4>Cuerno</h4><div class="desc">Sweet croissant-shaped roll, soft inside.</div></div><div class="price">$2.25</div></div>
+      <div class="menuitem"><div><h4>Bear Claw</h4><div class="desc">Sugar-dusted, lightly glazed.</div></div><div class="price">$2.25</div></div>
+      <div class="menuitem"><div><h4>Empanada Sweet</h4><div class="desc">Pineapple or pumpkin filling, baked daily.</div></div><div class="price">$2.00</div></div>
+      <div class="menuitem"><div><h4>Cinnamon Roll</h4><div class="desc">Big, fluffy, made for sharing — or not.</div></div><div class="price">$3.25</div></div>
+    </div>
+    <div class="menucol">
+      <h3>De Comer <small>SAVORY · DRINKS · CAKES</small></h3>
+      <div class="menuitem"><div><h4>Torta de Pollo</h4><div class="desc">Telera bread, avocado, beans, lettuce, queso.</div></div><div class="price">$8.50</div></div>
+      <div class="menuitem"><div><h4>Torta Veggie</h4><div class="desc">Ask for "sin carne" — it's our favorite order.</div></div><div class="price">$7.50</div></div>
+      <div class="menuitem"><div><h4>Café de Olla</h4><div class="desc">Cinnamon-spiced. Goes with everything in the case.</div></div><div class="price">$3.00</div></div>
+      <div class="menuitem"><div><h4>Champurrado</h4><div class="desc">Thick, warm, masa-based. Winter favorite.</div></div><div class="price">$3.50</div></div>
+      <div class="menuitem"><div><h4>Cookies (variety)</h4><div class="desc">Polvorones, biscochos, sugar cookies.</div></div><div class="price">from $1.50</div></div>
+      <div class="menuitem"><div><h4>Custom Cake</h4><div class="desc">Birthdays, baptisms, quinces. 48-hr notice.</div></div><div class="price">from $35</div></div>
+    </div>
+  </div>
+</div></section>
+
+<section class="praise"><div class="wrap">
+  <div class="center">
+    <div class="pre">— Lo Que Dicen —</div>
+    <h2>What the <em>neighborhood</em> says.</h2>
+  </div>
+  <div class="pgrid">
+    <div class="pcard">
+      <div class="star">★ ★ ★ ★ ★</div>
+      <div class="t">"Our family loves this little spot! We walk our dogs there to get goodies almost every day. Love their tortas — I get it without meat sooo yummy, and at a great price."</div>
+      <div class="who">Kat B. · Google</div>
+    </div>
+    <div class="pcard">
+      <div class="star">★ ★ ★ ★ ★</div>
+      <div class="t">"This place is nice. Me and my brother go here as it's not far from my home. Great spot for a quick stop in the neighborhood."</div>
+      <div class="who">Lani · Google</div>
+    </div>
+  </div>
+</div></section>
+
+<section class="visit"><div class="wrap">
+  <div class="grid">
+    <div>
+      <div class="pre">— Visit —</div>
+      <h2>Stop by, <em>say hello</em>.</h2>
+      <div class="det">
+        <div class="row"><b>Address</b><div>653 E Hyde Park Blvd<br>Inglewood, CA 90302</div></div>
+        <div class="row"><b>Call</b><a href="tel:+14243319622">(424) 331-9622</a></div>
+        <div class="row"><b>Best For</b><div>Morning pan + café · weekday tortas · weekend custom cakes</div></div>
+        <div class="row"><b>Walking Up?</b><div>Plenty of street parking, dog-friendly sidewalk.</div></div>
+      </div>
+    </div>
+    <div class="hourcard">
+      <h3>Open Every Day</h3>
+      <div class="hr"><b>Monday</b><span>6 AM – 7 PM</span></div>
+      <div class="hr"><b>Tuesday</b><span>6 AM – 7 PM</span></div>
+      <div class="hr"><b>Wednesday</b><span>6 AM – 7 PM</span></div>
+      <div class="hr"><b>Thursday</b><span>6 AM – 7 PM</span></div>
+      <div class="hr"><b>Friday</b><span>6 AM – 7 PM</span></div>
+      <div class="hr"><b>Saturday</b><span>6 AM – 7 PM</span></div>
+      <div class="hr"><b>Sunday</b><span>6:30 AM – 7 PM</span></div>
+    </div>
+  </div>
+</div></section>
+
+<footer>
+  <div class="b">Pan Dulce <em>#2</em></div>
+  <div class="det">653 E Hyde Park Blvd · Inglewood · <a href="tel:+14243319622">(424) 331-9622</a></div>
   <div class="credit">Mockup designed by LJ Sites — interested in making this yours? <a href="mailto:LJsites.llc@gmail.com">LJsites.llc@gmail.com</a></div>
-</div></footer>
+</footer>
+
 </body></html>
